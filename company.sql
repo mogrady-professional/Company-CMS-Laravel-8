@@ -68,14 +68,14 @@ CREATE TABLE IF NOT EXISTS `categories` (
 --
 
 INSERT INTO `categories` (`id`, `user_id`, `category_name`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 'Sea Fish', '2020-09-29 15:31:35', NULL, NULL),
-(2, 1, 'Woman', '2020-09-29 15:32:45', NULL, NULL),
-(3, 2, 'Man Item', '2020-09-29 15:32:59', NULL, NULL),
-(4, 1, 'Fish', '2020-09-29 15:35:37', '2020-09-29 15:35:37', NULL),
-(6, 1, 'hello1', '2020-09-29 15:44:00', '2020-10-01 12:56:24', '2020-10-01 12:56:24'),
+(1, 1, 'Sea Fish', '2022-09-29 15:31:35', NULL, NULL),
+(2, 1, 'Woman', '2022-09-29 15:32:45', NULL, NULL),
+(3, 2, 'Man Item', '2022-09-29 15:32:59', NULL, NULL),
+(4, 1, 'Fish', '2022-09-29 15:35:37', '2022-09-29 15:35:37', NULL),
+(6, 1, 'hello1', '2022-09-29 15:44:00', '2022-10-01 12:56:24', '2022-10-01 12:56:24'),
 (7, 1, 'Car', NULL, NULL, NULL),
-(8, 1, 'Ariyan', '2020-09-29 16:15:35', '2020-10-01 12:56:19', NULL),
-(9, 1, 'Woman222', '2020-10-01 12:58:34', NULL, NULL);
+(8, 1, 'Michael', '2022-09-29 16:15:35', '2022-10-01 12:56:19', NULL),
+(9, 1, 'Woman222', '2022-10-01 12:58:34', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -185,19 +185,19 @@ CREATE TABLE IF NOT EXISTS `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2014_10_12_200000_add_two_factor_columns_to_users_table', 1),
-(4, '2019_08_19_000000_create_failed_jobs_table', 1),
-(5, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(6, '2020_09_29_184555_create_sessions_table', 1),
-(7, '2020_09_29_202022_create_categories_table', 2),
-(8, '2020_10_01_191415_create_brands_table', 3),
-(9, '2020_10_03_174820_create_multipics_table', 4),
-(10, '2020_10_05_214012_create_sliders_table', 5),
-(11, '2020_10_06_184515_create_home_abouts_table', 6),
-(12, '2020_10_06_205337_create_contacts_table', 7),
-(13, '2020_10_06_214431_create_contact_forms_table', 8);
+(1, '2022_05_12_000000_create_users_table', 1),
+(2, '2022_05_12_100000_create_password_resets_table', 1),
+(3, '2022_05_12_200000_add_two_factor_columns_to_users_table', 1),
+(4, '2022_08_19_000000_create_failed_jobs_table', 1),
+(5, '2022_12_14_000001_create_personal_access_tokens_table', 1),
+(6, '2022_09_29_184555_create_sessions_table', 1),
+(7, '2022_09_29_202022_create_categories_table', 2),
+(8, '2022_10_01_191415_create_brands_table', 3),
+(9, '2022_10_03_174820_create_multipics_table', 4),
+(10, '2022_10_05_214012_create_sliders_table', 5),
+(11, '2022_10_06_184515_create_home_abouts_table', 6),
+(12, '2022_10_06_205337_create_contacts_table', 7),
+(13, '2022_10_06_214431_create_contact_forms_table', 8);
 
 -- --------------------------------------------------------
 
@@ -341,9 +341,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'Kazi', 'admin@gmail.com', '2020-10-03 13:45:51', '$2y$10$xyCE4B8/8hP1AErp8HNKI.bUOxAOi0UeatitPS.tCYoeAUYCAp2i2', NULL, NULL, '3oxfjS2YIeprjGPvMMYEZP8bTJIK3fxXQRybeQsdQuS3eRx60FzolCr41Q29', NULL, 'profile-photos/2GBvHch2s86UntQ1RyPrezIJSuH6cqoUnHYY2JtR.jpeg', '2020-09-29 13:06:16', '2020-10-07 15:34:24'),
-(2, 'Ariyan', 'ariyan@gmail.com', NULL, '$2y$10$fiRVWisNmENZGAQhX2NPpeVe15dC8IZ4Cj.8Qnykba6axlouxbXtS', NULL, NULL, NULL, NULL, NULL, '2020-09-29 13:20:25', '2020-09-29 13:20:25'),
-(3, 'Test', 'test@gmail.com', NULL, '$2y$10$al.9Izs0ZxjxGAiLNjFPu.K9R8K/btvETNS8gJN2cVZowJclbWGw6', NULL, NULL, NULL, NULL, NULL, '2020-09-29 13:53:42', '2020-09-29 13:53:42');
+(1, 'Mike', 'admin@gmail.com', '2020-10-03 13:45:51', '$2y$10$xyCE4B8/8hP1AErp8HNKI.bUOxAOi0UeatitPS.tCYoeAUYCAp2i2', NULL, NULL, '3oxfjS2YIeprjGPvMMYEZP8bTJIK3fxXQRybeQsdQuS3eRx60FzolCr41Q29', NULL, 'profile-photos/2GBvHch2s86UntQ1RyPrezIJSuH6cqoUnHYY2JtR.jpeg', '2022-05-29 13:06:16', '2022-05-07 15:34:24'),
+(2, 'michael', 'michael@gmail.com', NULL, '$2y$10$fiRVWisNmENZGAQhX2NPpeVe15dC8IZ4Cj.8Qnykba6axlouxbXtS', NULL, NULL, NULL, NULL, NULL, '2022-05-29 13:20:25', '2022-05-29 13:20:25'),
+(3, 'Test', 'test@gmail.com', NULL, '$2y$10$al.9Izs0ZxjxGAiLNjFPu.K9R8K/btvETNS8gJN2cVZowJclbWGw6', NULL, NULL, NULL, NULL, NULL, '2022-05-29 13:53:42', '2022-05-29 13:53:42');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
